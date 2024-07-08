@@ -7,9 +7,21 @@
     Shell.FlyoutBehavior="Disabled"
     Title="MauiAppStockTaking">
 
-    <ShellContent
+    <!--<ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Route="MainPage" />-->
+
+    <TabBar>
+        <Tab Title="Input"
+             Icon="key.svg">
+            <ShellContent ContentTemplate="{DataTemplate pages:InputPage}"/>
+        </Tab>
+
+        <Tab Title="Reports"
+             Icon="report.svg">
+            <ShellContent ContentTemplate="{DataTemplate pages:ReportPage}"/>
+        </Tab>
+    </TabBar>
 
 </Shell>
