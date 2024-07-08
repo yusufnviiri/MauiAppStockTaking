@@ -5,4 +5,6 @@
 //global using global::System.Threading;
 //global using global::System.Threading.Task;
 using global::MauiAppStockTaking.Pages;
+using global::MauiAppStockTaking.Models;
+
 

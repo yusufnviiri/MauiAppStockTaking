@@ -15,12 +15,14 @@
 
     <TabBar>
         <Tab Title="Input"
-             Icon="dotnet_bot.png">
+             Icon="dotnet_bot.png"
+             Route="input">       
             <ShellContent ContentTemplate="{DataTemplate pages:InputPage}"/>
         </Tab>
 
         <Tab Title="Reports"
-             Icon="dotnet_bot.png">
+             Icon="dotnet_bot.png"
+             Route="reports">         
             <ShellContent ContentTemplate="{DataTemplate pages:ReportPage}"/>
         </Tab>
     </TabBar>
