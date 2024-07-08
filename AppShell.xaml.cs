@@ -12,5 +12,6 @@ namespace MauiAppStockTaking
 
 
         }
+       
     }
 }

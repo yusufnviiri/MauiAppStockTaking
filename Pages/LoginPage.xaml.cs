@@ -22,9 +22,9 @@ public partial class LoginPage : ContentPage
             }
 else
             {
-                // TODO: navigate back to the app
-            }
-        
+            await Navigation.PopModalAsync();
+        }
+
 
 
     }

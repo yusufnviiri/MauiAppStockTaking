@@ -8,5 +8,11 @@
 
             MainPage = new AppShell();
         }
+        protected override async void OnStart()
+        {
+            base.OnStart();
+            await MainPage.Navigation.PushModalAsync(new LoginPage());
+
+        }
     }
 }
