@@ -16,8 +16,8 @@ public partial class InputPage : ContentPage
     {
         var product = new Product
         {
-            Name = "MauiStockTake",
-            ManufacturerName = "BeachBytes"
+            Name = "This is a product sorting and counter",
+            ManufacturerName = "Old Devol of Marietta!!"
         };
         var pageParams = new Dictionary<string, object>{{ "Product", product }};
         await Shell.Current.GoToAsync("productdetails", pageParams);
