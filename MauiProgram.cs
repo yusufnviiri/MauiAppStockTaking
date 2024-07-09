@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
+using IBrowser = IdentityModel.OidcClient.Browser.IBrowser;
+
 
 namespace MauiAppStockTaking
 {
@@ -14,9 +16,14 @@ namespace MauiAppStockTaking
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+            builder.Services.AddSingleton<IBrowser, AuthBrowser>();
+            builder.Services.AddSingleton<IAuthService, AuthService>();
+            builder.Services.AddTransient<LoginPage>();
+
+
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();

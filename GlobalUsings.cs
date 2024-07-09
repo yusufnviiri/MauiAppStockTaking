@@ -14,6 +14,8 @@ global using System.Threading.Tasks;
  global using MauiAppStockTaking.Services;
 global using MauiAppStockTaking.Pages;
 global using MauiAppStockTaking.Models;
+global using MauiAppStockTaking.Helpers;
+
 
 
 
